@@ -1,8 +1,28 @@
-let i = 0;
-for (c = 2; c <= 100; c++) {
-  for (b = 1; b <= c; b++) {
-    if (c % b == 0) i++;
+function fizzBuzzChallenge() {
+  let number = prompt("what's your number?");
+  Number(number);
+  function check() {
+    switch (true) {
+      case number % 5 == 0 && number % 3 == 0:
+        alert("FizzBuzz");
+        fizzBuzz();
+        break;
+
+      case number % 5 == 0:
+        alert("Fizz");
+        fizzBuzz();
+        break;
+
+      case number % 3 == 0:
+        alert("Buzz");
+        fizzBuzz();
+        break;
+
+      default:
+        alert("False");
+        break;
+    }
   }
-  if (i == 2) console.log(c);
-  i = 0;
+  check();
 }
+fizzBuzzChallenge();
